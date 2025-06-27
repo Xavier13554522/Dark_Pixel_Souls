@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego</title>
+</head>
+<body>
+    <div id="game-container">
+        <button id="button">Jugar</button>
+        <button id="Instructions">Instruciones</button>
+    </div>
+        <div id="list_player">    
+
+            <div id="container_player">
+                <button id="button" class="personaje" onclick="player.personaje = player.personaje[0];pj = pj[0]">Hermana Friede</button>
+                <img src="src/sprite/Hermana_friede/Friede.webp" alt="" id="style_pjs">
+            </div>
+
+            <div id="container_player">
+                <button id="button" class="Gael personaje" onclick="player.personaje = player.personaje[1];pj = pj[1] ">Caballero Gael</button>
+                <img src="src/sprite/Gael/Gael.webp" alt="" id="style_pjs">
+            </div>
+
+            <div id="container_player">
+                <button id="button" class="Rey personaje" onclick="player.personaje = player.personaje[2];pj = pj[2]">Rey Sin Nombre</button>
+                <img src="src/sprite/Rey_Sin_nombre/King.webp" alt="" id="style_pjs">
+            </div>
+
+        </div>
+
+        <div id="begin">
+            <div id="starting"></div>
+            <button id="button" class="start">¿Estas preparado?</button>
+            <button id="button" class="reset">Volver al inicio</button>
+        </div>
+
+    <div id="display">
+        <div class="combat">
+            <div id="player_combat">
+                <div id="player"></div>
+                
+            </div>
+            <div>
+                <div id="enemigo"></div>
+                <img src="src/sprite/Lords_of _cinder/lords_of_cinder_by_hacker93_dbidyic.webp" alt="" class="style_img XD">
+            </div>
+        </div>
+        <div id="action">
+            <div>
+                <h4>Curarse</h4>
+                <button id="heal" class="bottom"><img src="src/estus.webp" alt="" class="style_img heal_style"></button>
+            </div>
+            <div>
+                <h4>Atacar</h4>
+                <button id="fight" class="bottom"><img src="src/sword.webp" alt="" class="style_img fight_style"></button>
+            </div>
+            <div>
+                <h4>Habilidad</h4>
+                <button id="skill" class="bottom" disabled><img src="src/skill.webp" alt="" class="style_img skill_style"></button>
+            </div>
+        </div>
+    </div>
+    <div id="final">
+        <div id="win_or_lose"></div>
+        <button id="button" class="final_reset">Volver al inicio</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
